@@ -1,2 +1,2 @@
-# React-input-components
+# React-input-component
 Created with CodeSandbox
