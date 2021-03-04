@@ -1,10 +1,13 @@
-import { Heading } from "./InputElements";
+import { Heading } from './InputElements';
 
 export default function Input() {
-  return (
-    <>
-      <Heading>Inputs</Heading>
-      <input />
-    </>
-  );
+	return (
+		<>
+			<Heading>Inputs</Heading>
+			<label>
+				Label
+				<Input placeholder="Placeholder" />
+			</label>
+		</>
+	);
 }
