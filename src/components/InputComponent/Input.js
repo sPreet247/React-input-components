@@ -1,4 +1,4 @@
-import { Heading } from './InputElements';
+import { Heading, Inputs } from './InputElements';
 
 export default function Input() {
 	return (
@@ -6,7 +6,7 @@ export default function Input() {
 			<Heading>Inputs</Heading>
 			<label>
 				Label
-				<Input placeholder="Placeholder" />
+				<Inputs placeholder="Placeholder" />
 			</label>
 		</>
 	);

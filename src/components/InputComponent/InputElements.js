@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const handleSize = (size) => {
 	switch (size) {
@@ -27,7 +27,7 @@ export const Heading = styled.h1`
 	color: #4f4f4f;
 `;
 
-export const Input = styled.input.attrs((props) => ({
+export const Inputs = styled.input.attrs((props) => ({
 	type: 'text',
 }))`
 	padding: ${({ size }) => handleSize(size)};
