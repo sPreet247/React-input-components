@@ -3,13 +3,13 @@ import styled from 'styled-components';
 const handleSize = (size) => {
 	switch (size) {
 		case 'sm':
-			return '200px 40px';
+			return '40px 200px';
 		case 'fullWidth':
-			return '1031px 56px';
+			return '56px 1031px';
 		case 'multiline':
-			return '200px 150px';
+			return '150px 200px';
 		default:
-			return '200px 50px';
+			return '56px 200px';
 	}
 };
 
@@ -32,6 +32,5 @@ export const Inputs = styled.input.attrs((props) => ({
 }))`
 	padding: ${({ size }) => handleSize(size)};
 	border: 1px solid #828282;
-	box-sizing: border-box;
 	border-radius: 8px;
 `;
