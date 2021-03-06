@@ -4,10 +4,8 @@ export default function Input() {
 	return (
 		<>
 			<Heading>Inputs</Heading>
-			<label>
-				Label
-				<Inputs placeholder="Placeholder" />
-			</label>
+			<label>Label</label>
+			<Inputs placeholder="Placeholder" />
 		</>
 	);
 }

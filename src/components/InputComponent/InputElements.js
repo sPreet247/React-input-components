@@ -38,3 +38,17 @@ export const Inputs = styled.input.attrs((props) => ({
 	border: 1px solid #828282;
 	border-radius: 8px;
 `;
+
+export const Label = styled.label`
+	width: 31px;
+	height: 17px;
+	font-family: Noto Sans JP;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 17px;
+
+	/* Gray 1 */
+
+	color: #333333;
+`;
