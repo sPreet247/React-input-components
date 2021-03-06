@@ -4,9 +4,9 @@ const handleSize = (size) => {
 	switch (size) {
 		case 'sm':
 			return '40px 200px';
-		case 'fullWidth':
+		case 'fw':
 			return '56px 1031px';
-		case 'multiline':
+		case 'ml':
 			return '150px 200px';
 		default:
 			return '56px 200px';
@@ -29,8 +29,12 @@ export const Heading = styled.h1`
 
 export const Inputs = styled.input.attrs((props) => ({
 	type: 'text',
+	size: props.size || '1em',
 }))`
-	padding: ${({ size }) => handleSize(size)};
+	/* padding: ${({ size }) => handleSize(size)}; */
+	margin: ${(props) => props.size};
+  padding: ${(props) => props.size};
+	box-sizing: border-box;
 	border: 1px solid #828282;
 	border-radius: 8px;
 `;
