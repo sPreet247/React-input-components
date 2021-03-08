@@ -27,6 +27,12 @@ export const Heading = styled.h1`
 	color: #4f4f4f;
 `;
 
+export const Container = styled.div`
+	display: flex;
+	margin-left: 315px;
+	margin-top: 180px;
+`;
+
 export const Inputs = styled.input.attrs((props) => ({
 	type: 'text',
 }))`
