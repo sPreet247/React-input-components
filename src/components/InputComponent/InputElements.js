@@ -1,17 +1,4 @@
-import styled from 'styled-components';
-
-// const handleSize = (size) => {
-// 	switch (size) {
-// 		case 'sm':
-// 			return '40px 200px';
-// 		case 'fw':
-// 			return '56px 1031px';
-// 		case 'ml':
-// 			return '150px 200px';
-// 		default:
-// 			return '56px 200px';
-// 	}
-// };
+import styled, { css } from 'styled-components';
 
 export const Heading = styled.h1`
 	position: absolute;
@@ -27,33 +14,60 @@ export const Heading = styled.h1`
 	color: #4f4f4f;
 `;
 
-export const Container = styled.div`
-	display: flex;
-	margin-left: 315px;
-	margin-top: 180px;
+export const Title = styled.title`
+	position: absolute;
+	width: 54px;
+	height: 12px;
+	left: 317px;
+	top: 131px;
+
+	font-family: Ubuntu Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 12px;
+
+	color: #333333;
 `;
+
+export const Container = styled.div``;
 
 export const Inputs = styled.input.attrs((props) => ({
 	type: 'text',
 }))`
+	position: absolute;
 	width: 200px;
-	height: 50px;
-
+	height: 56px;
+	left: 317px;
+	top: 180px;
 	box-sizing: border-box;
 	border: 1px solid #828282;
 	border-radius: 8px;
+	font-size: 15px;
+	padding-left: 12px;
+
+	${(props) =>
+		props.Input &&
+		css`
+			&:hover {
+				border: 1px solid #333333;
+			}
+			&:focus {
+				border: 1px solid #2962ff;
+			}
+		`}
 `;
 
 export const Label = styled.label`
+	position: absolute;
 	width: 31px;
 	height: 17px;
+	left: 317px;
+	top: 159px;
 	font-family: Noto Sans JP;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 17px;
-
-	/* Gray 1 */
-
 	color: #333333;
 `;
