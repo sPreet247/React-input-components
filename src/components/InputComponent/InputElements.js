@@ -27,26 +27,30 @@ export const Heading = styled.h1`
 	color: #4f4f4f;
 `;
 
-export const Container = styled.div`
-	display: flex;
-	margin-left: 315px;
-	margin-top: 180px;
-`;
-
 export const Inputs = styled.input.attrs((props) => ({
 	type: 'text',
 }))`
+	position: absolute;
 	width: 200px;
-	height: 50px;
+	height: 56px;
+	left: 317px;
+	top: 180px;
+	padding-left: 12px;
 
-	box-sizing: border-box;
+	/* Gray 3 */
+
 	border: 1px solid #828282;
+	box-sizing: border-box;
 	border-radius: 8px;
 `;
 
 export const Label = styled.label`
+	position: absolute;
 	width: 31px;
 	height: 17px;
+	left: 317px;
+	top: 159px;
+
 	font-family: Noto Sans JP;
 	font-style: normal;
 	font-weight: normal;
