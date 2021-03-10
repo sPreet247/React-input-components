@@ -1,17 +1,4 @@
-import styled from 'styled-components';
-
-// const handleSize = (size) => {
-// 	switch (size) {
-// 		case 'sm':
-// 			return '40px 200px';
-// 		case 'fw':
-// 			return '56px 1031px';
-// 		case 'ml':
-// 			return '150px 200px';
-// 		default:
-// 			return '56px 200px';
-// 	}
-// };
+import styled, { css } from 'styled-components';
 
 export const Heading = styled.h1`
 	position: absolute;
@@ -36,12 +23,19 @@ export const Inputs = styled.input.attrs((props) => ({
 	left: 317px;
 	top: 180px;
 	padding-left: 12px;
-
-	/* Gray 3 */
-
 	border: 1px solid #828282;
 	box-sizing: border-box;
 	border-radius: 8px;
+	${(props) =>
+		props.inputs &&
+		css`
+			&:hover {
+				border: 1px solid #333333;
+			}
+			&:focus {
+				border: 1px solid #2962ff;
+			}
+		`}
 `;
 
 export const Label = styled.label`
@@ -56,8 +50,5 @@ export const Label = styled.label`
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 17px;
-
-	/* Gray 1 */
-
 	color: #333333;
 `;

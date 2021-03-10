@@ -6,7 +6,7 @@ export default function Input() {
 			<Heading>Inputs</Heading>
 
 			<Label>Label</Label>
-			<Inputs placeholder="Placeholder" />
+			<Inputs inputs placeholder="Placeholder" />
 		</>
 	);
 }
