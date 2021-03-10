@@ -14,6 +14,36 @@ export const Heading = styled.h1`
 	color: #4f4f4f;
 `;
 
+export const InputHeading = styled.h4`
+	position: absolute;
+	width: 54px;
+	height: 12px;
+	left: 317px;
+	top: 131px;
+
+	font-family: Ubuntu Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 12px;
+	color: #333333;
+`;
+
+export const Label = styled.label`
+	position: absolute;
+	width: 31px;
+	height: 17px;
+	left: 317px;
+	top: 159px;
+
+	font-family: Noto Sans JP;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 17px;
+	color: #333333;
+`;
+
 export const Inputs = styled.input.attrs((props) => ({
 	type: 'text',
 }))`
@@ -36,19 +66,4 @@ export const Inputs = styled.input.attrs((props) => ({
 				border: 1px solid #2962ff;
 			}
 		`}
-`;
-
-export const Label = styled.label`
-	position: absolute;
-	width: 31px;
-	height: 17px;
-	left: 317px;
-	top: 159px;
-
-	font-family: Noto Sans JP;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 17px;
-	color: #333333;
 `;
