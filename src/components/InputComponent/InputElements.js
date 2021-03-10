@@ -14,7 +14,7 @@ export const Heading = styled.h1`
 	color: #4f4f4f;
 `;
 
-export const InputHeading = styled.h4`
+export const InputHeading = styled.code`
 	position: absolute;
 	width: 54px;
 	height: 12px;
