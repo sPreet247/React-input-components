@@ -5,12 +5,16 @@ export default function Input() {
 		<>
 			<Heading>Inputs</Heading>
 			<InputHeading>
-				<code>
-					'<Input />'
-				</code>
+				<code>&lt;Input/&gt;</code>
 			</InputHeading>
 			<Label>Label</Label>
 			<Inputs inputs placeholder="Placeholder" />
+
+			<InputHeading error>
+				<code>&lt;Input error/&gt;</code>
+			</InputHeading>
+			<Label error>Label</Label>
+			<Inputs error placeholder="Placeholder" />
 		</>
 	);
 }

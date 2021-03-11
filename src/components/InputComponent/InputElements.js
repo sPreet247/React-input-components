@@ -27,6 +27,13 @@ export const InputHeading = styled.code`
 	font-size: 12px;
 	line-height: 12px;
 	color: #333333;
+	${(props) =>
+		props.error &&
+		css`
+			display: inline-block;
+			left: 317px;
+			top: 278px;
+		`}
 `;
 
 export const Label = styled.label`
@@ -42,6 +49,13 @@ export const Label = styled.label`
 	font-size: 12px;
 	line-height: 17px;
 	color: #333333;
+	${(props) =>
+		props.error &&
+		css`
+			left: 318px;
+			top: 306px;
+			color: #d32f2f;
+		`}
 `;
 
 export const Inputs = styled.input.attrs((props) => ({
@@ -64,6 +78,18 @@ export const Inputs = styled.input.attrs((props) => ({
 			}
 			&:focus {
 				border: 1px solid #2962ff;
+			}
+		`}
+	${(props) =>
+		props.error &&
+		css`
+			left: 318px;
+			top: 327px;
+			&:hover {
+				border: 1px solid #333333;
+			}
+			&:focus {
+				border: 1px solid #d32f2f;
 			}
 		`}
 `;
