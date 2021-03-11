@@ -34,6 +34,12 @@ export const InputHeading = styled.code`
 			left: 317px;
 			top: 278px;
 		`}
+	${(props) =>
+		props.disabled &&
+		css`
+			left: 317px;
+			top: 425px;
+		`}
 `;
 
 export const Label = styled.label`
@@ -56,6 +62,12 @@ export const Label = styled.label`
 			top: 306px;
 			color: #d32f2f;
 		`}
+	${(props) =>
+		props.disabled &&
+		css`
+			left: 317px;
+			top: 453px;
+		`}
 `;
 
 export const Inputs = styled.input.attrs((props) => ({
@@ -67,6 +79,7 @@ export const Inputs = styled.input.attrs((props) => ({
 	left: 317px;
 	top: 180px;
 	padding-left: 12px;
+
 	border: 1px solid #828282;
 	box-sizing: border-box;
 	border-radius: 8px;
@@ -92,4 +105,17 @@ export const Inputs = styled.input.attrs((props) => ({
 				border: 1px solid #d32f2f;
 			}
 		`}
+		${(props) =>
+			props.disabled &&
+			css`
+				left: 317px;
+				top: 474px;
+
+				background: #f2f2f2;
+
+				border: 1px solid #e0e0e0;
+				&:hover,
+      &:focus {
+        cursor: not-allowed;
+			`}
 `;

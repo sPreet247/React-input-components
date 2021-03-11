@@ -15,6 +15,12 @@ export default function Input() {
 			</InputHeading>
 			<Label error>Label</Label>
 			<Inputs error placeholder="Placeholder" />
+
+			<InputHeading disabled>
+				<code>&lt;Input disabled/&gt;</code>
+			</InputHeading>
+			<Label disabled>Label</Label>
+			<Inputs disabled placeholder="Placeholder" />
 		</>
 	);
 }
