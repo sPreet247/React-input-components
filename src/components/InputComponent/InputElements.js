@@ -40,6 +40,12 @@ export const InputHeading = styled.code`
 			left: 317px;
 			top: 425px;
 		`}
+		${(props) =>
+			props.helperText &&
+			css`
+				left: 317px;
+				top: 572px;
+			`}
 `;
 
 export const Label = styled.label`
@@ -68,6 +74,13 @@ export const Label = styled.label`
 			left: 317px;
 			top: 453px;
 		`}
+
+		${(props) =>
+			props.helperText &&
+			css`
+				left: 317px;
+				top: 600px;
+			`}
 `;
 
 export const Inputs = styled.input.attrs((props) => ({
@@ -117,5 +130,19 @@ export const Inputs = styled.input.attrs((props) => ({
 				&:hover,
       &:focus {
         cursor: not-allowed;
+			`}
+
+			${(props) =>
+				props.helperText &&
+				css`
+			left: 317px;
+top: 621px;
+
+/* Gray 3 */
+
+border: 1px solid #828282;
+				&:hover,
+      &:focus {
+        
 			`}
 `;

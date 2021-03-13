@@ -21,6 +21,12 @@ export default function Input() {
 			</InputHeading>
 			<Label disabled>Label</Label>
 			<Inputs disabled placeholder="Placeholder" />
+
+			<InputHeading helperText>
+				<code>&lt;Input helperText=”Some interesting text”/&gt;</code>
+			</InputHeading>
+			<Label helperText>Label</Label>
+			<Inputs helperText placeholder="Placeholder" />
 		</>
 	);
 }
