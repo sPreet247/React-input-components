@@ -1,14 +1,11 @@
 import { Heading, InputHeading, Inputs, Label } from './InputElements';
+import InputSubComponent from './InputSubComponent';
 
-export default function Input() {
+function Input() {
 	return (
 		<>
 			<Heading>Inputs</Heading>
-			<InputHeading>
-				<code>&lt;Input/&gt;</code>
-			</InputHeading>
-			<Label>Label</Label>
-			<Inputs inputs placeholder="Placeholder" />
+			<InputSubComponent />
 
 			<InputHeading error>
 				<code>&lt;Input error/&gt;</code>
@@ -30,3 +27,5 @@ export default function Input() {
 		</>
 	);
 }
+
+export default Input;
