@@ -1,14 +1,15 @@
-import { Heading, InputHeading, Inputs, Label } from './InputElements';
+import { Heading, Wrapper, InputHeading, Inputs, Label } from './InputElements';
 import InputSubComponent from './InputSubComponent';
 
 function Input() {
 	return (
 		<>
 			<Heading>Inputs</Heading>
-			<InputSubComponent />
-			<InputSubComponent />
-
-			<InputHeading error>
+			<Wrapper>
+				<InputSubComponent>Input</InputSubComponent>
+				<InputSubComponent>Input</InputSubComponent>
+			</Wrapper>
+			{/* <InputHeading error>
 				<code>&lt;Input error/&gt;</code>
 			</InputHeading>
 			<Label error>Label</Label>
@@ -24,7 +25,7 @@ function Input() {
 				<code>&lt;Input helperText=”Some interesting text”/&gt;</code>
 			</InputHeading>
 			<Label helperText>Label</Label>
-			<Inputs helperText placeholder="Placeholder" />
+			<Inputs helperText placeholder="Placeholder" /> */}
 		</>
 	);
 }

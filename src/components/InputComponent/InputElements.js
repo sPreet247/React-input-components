@@ -14,7 +14,13 @@ export const Heading = styled.h1`
 	color: #4f4f4f;
 `;
 
-export const HelperText = styled.code`
+export const Wrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+`;
+
+export const HelperText = styled.text`
 	position: absolute;
 	width: 54px;
 	height: 12px;
@@ -87,8 +93,7 @@ export const Inputs = styled.input.attrs((props) => ({
 	type: 'text',
 }))`
 	position: absolute;
-	width: 200px;
-	height: 56px;
+	padding: 1rem;
 	left: 317px;
 	top: 180px;
 	padding-left: 12px;
