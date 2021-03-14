@@ -1,11 +1,11 @@
-import { InputHeading, Inputs, Label } from './InputElements';
+import { HelperText, Inputs, Label } from './InputElements';
 
 const InputSubComponent = (props) => {
 	return (
 		<>
-			<InputHeading>
+			<HelperText>
 				<code>&lt;Input/&gt;</code>
-			</InputHeading>
+			</HelperText>
 			<Label>Label</Label>
 			<Inputs inputs placeholder="Placeholder" />
 		</>

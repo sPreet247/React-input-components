@@ -6,6 +6,7 @@ function Input() {
 		<>
 			<Heading>Inputs</Heading>
 			<InputSubComponent />
+			<InputSubComponent />
 
 			<InputHeading error>
 				<code>&lt;Input error/&gt;</code>
