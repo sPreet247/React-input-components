@@ -10,6 +10,7 @@ function Input() {
 				label="Label"
 				helperText="Input"
 				placeholder="Placeholder"
+				inputs="inputs"
 			/>
 
 			{/* <InputHeading error>
