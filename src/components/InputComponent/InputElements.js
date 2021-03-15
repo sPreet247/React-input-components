@@ -17,7 +17,6 @@ export const Heading = styled.h1`
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-content: space-around;
 `;
 
 export const HelperText = styled.text`
