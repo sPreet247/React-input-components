@@ -1,4 +1,4 @@
-import { Heading } from './InputElements';
+import { Heading, Inputs } from './InputElements';
 import InputSubComponent from './InputSubComponent';
 
 function Input() {
@@ -10,7 +10,7 @@ function Input() {
 				label="Label"
 				helperText="Input"
 				placeholder="Placeholder"
-				inputs="inputs"
+				hover={Inputs.error}
 			/>
 
 			{/* <InputHeading error>
