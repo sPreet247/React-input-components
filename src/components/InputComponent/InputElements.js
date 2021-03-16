@@ -101,7 +101,7 @@ export const Inputs = styled.input.attrs((props) => ({
 	box-sizing: border-box;
 	border-radius: 8px;
 	${(props) =>
-		props.inputs &&
+		props.normal &&
 		css`
 			&:hover {
 				border: 1px solid #333333;
