@@ -20,13 +20,8 @@ export const Wrapper = styled.div`
 `;
 
 export const HelperText = styled.text`
-	position: absolute;
-	width: 54px;
-	height: 12px;
-	left: 317px;
-	top: 131px;
 
-	font-family: Ubuntu Mono;
+font-family: Ubuntu Mono;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
@@ -54,11 +49,7 @@ export const HelperText = styled.text`
 `;
 
 export const Label = styled.label`
-	position: absolute;
-	width: 31px;
-	height: 17px;
-	left: 317px;
-	top: 159px;
+	
 
 	font-family: Noto Sans JP;
 	font-style: normal;
@@ -91,10 +82,11 @@ export const Label = styled.label`
 export const Inputs = styled.input.attrs((props) => ({
 	type: 'text',
 }))`
-	position: absolute;
-	padding: 1rem;
-	left: 317px;
-	top: 180px;
+
+	padding: .6rem;
+	width: 10rem;
+	
+	
 	padding-left: 12px;
 
 	border: 1px solid #828282;

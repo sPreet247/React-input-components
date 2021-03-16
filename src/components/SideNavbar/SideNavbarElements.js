@@ -1,21 +1,21 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const Title = styled.h3`
-  position: absolute;
-  width: 114px;
-  height: 20px;
-  left: 48px;
-  top: 38px;
+	position: absolute;
+	width: 114px;
+	height: 20px;
+	left: 48px;
+	top: 38px;
 
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 19px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 19px;
 
-  /* identical to box height */
+	/* identical to box height */
 
-  color: #f7542e;
+	color: #f7542e;
 `;
 
 export const NavLink = styled.a`
@@ -33,41 +33,41 @@ export const NavLink = styled.a`
   color: #9e9e9e;
 
   ${(props) =>
-    props.colors &&
-    css`
-      top: 180px;
-      width: 62px;
-    `}
+		props.colors &&
+		css`
+			top: 180px;
+			width: 62px;
+		`}
   ${(props) =>
-    props.typography &&
-    css`
-      top: 225px;
-      width: 80px;
-    `}
+		props.typography &&
+		css`
+			top: 225px;
+			width: 80px;
+		`}
   ${(props) =>
-    props.spaces &&
-    css`
-      top: 277px;
-      width: 47px;
-    `}
+		props.spaces &&
+		css`
+			top: 277px;
+			width: 47px;
+		`}
   ${(props) =>
-    props.buttons &&
-    css`
-      top: 327px;
-      width: 53px;
-    `}
+		props.buttons &&
+		css`
+			top: 327px;
+			width: 53px;
+			font-weight: bold;
+			color: #090f31;
+		`}
   ${(props) =>
-    props.inputs &&
-    css`
-      top: 375px;
-      width: 45px;
-      color: #090f31;
-      font-weight: bold;
-    `}
+		props.inputs &&
+		css`
+			top: 375px;
+			width: 45px;
+		`}
   ${(props) =>
-    props.grid &&
-    css`
-      top: 430px;
-      width: 29px;
-    `}
+		props.grid &&
+		css`
+			top: 430px;
+			width: 29px;
+		`}
 `;
