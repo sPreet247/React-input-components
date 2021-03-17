@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { Heading, Inputs, Wrapper } from './InputElements';
 import InputSubComponent from './InputSubComponent';
 
 function Input() {
+	const [hover, setHover] = useState();
 	return (
 		<>
 			<Heading>Inputs</Heading>
