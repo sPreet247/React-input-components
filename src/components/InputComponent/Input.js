@@ -1,4 +1,4 @@
-import { Heading, Inputs, normal, Wrapper } from './InputElements';
+import { Heading, Inputs, Wrapper } from './InputElements';
 import InputSubComponent from './InputSubComponent';
 
 function Input() {
@@ -10,6 +10,7 @@ function Input() {
 					label="Label"
 					helperText="Input"
 					placeholder="Placeholder"
+					error
 				/>
 
 				<InputSubComponent

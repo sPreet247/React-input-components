@@ -79,14 +79,10 @@ export const Label = styled.label`
 			`}
 `;
 
-export const Inputs = styled.input.attrs((props) => ({
-	type: 'text',
-}))`
-
-	padding: .6rem;
+export const Inputs = styled.input`
+	padding: 0.6rem;
 	width: 10rem;
-	
-	
+
 	padding-left: 12px;
 
 	border: 1px solid #828282;

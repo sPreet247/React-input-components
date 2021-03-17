@@ -3,8 +3,7 @@ import { HelperText, Inputs, Label } from './InputElements';
 const InputSubComponent = ({
 	helperText,
 	label,
-	error,
-	normal,
+
 	...otherProps
 }) => {
 	return (
