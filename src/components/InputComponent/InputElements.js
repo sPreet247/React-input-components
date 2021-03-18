@@ -91,9 +91,3 @@ export const Inputs = styled.input.attrs((props) => ({
 	box-sizing: border-box;
 	border-radius: 8px;
 `;
-
-export const InputHover = styled(Inputs)`
-	:hover {
-		border: 1px solid red;
-	}
-`;
