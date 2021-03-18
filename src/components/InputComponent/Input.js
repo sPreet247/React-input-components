@@ -12,7 +12,6 @@ function Input() {
 					label="Label"
 					helperText="Input"
 					placeholder="Placeholder"
-					error
 				/>
 
 				<InputSubComponent

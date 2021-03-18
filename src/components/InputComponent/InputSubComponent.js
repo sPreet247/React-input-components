@@ -1,4 +1,4 @@
-import { HelperText, Inputs, Label } from './InputElements';
+import { HelperText, Inputs, InputHover, Label } from './InputElements';
 
 const InputSubComponent = ({
 	helperText,
@@ -10,7 +10,7 @@ const InputSubComponent = ({
 		<>
 			<HelperText>&lt;{helperText} /&gt;</HelperText>
 			<Label>{label}</Label>
-			<Inputs placeholder={otherProps.placeholder} />
+			<InputHover placeholder={otherProps.placeholder} />
 		</>
 	);
 };

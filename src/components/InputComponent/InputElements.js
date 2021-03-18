@@ -79,7 +79,9 @@ export const Label = styled.label`
 			`}
 `;
 
-export const Inputs = styled.input`
+export const Inputs = styled.input.attrs((props) => ({
+	className: props.className,
+}))`
 	padding: 0.6rem;
 	width: 10rem;
 
@@ -88,53 +90,10 @@ export const Inputs = styled.input`
 	border: 1px solid #828282;
 	box-sizing: border-box;
 	border-radius: 8px;
-	${(props) =>
-		props.normal &&
-		css`
-			&:hover {
-				border: 1px solid #333333;
-			}
-			&:focus {
-				border: 1px solid #2962ff;
-			}
-		`}
-	${(props) =>
-		props.error &&
-		css`
-			left: 318px;
-			top: 327px;
-			&:hover {
-				border: 1px solid #333333;
-			}
-			&:focus {
-				border: 1px solid #d32f2f;
-			}
-		`}
-		${(props) =>
-			props.disabled &&
-			css`
-				left: 317px;
-				top: 474px;
+`;
 
-				background: #f2f2f2;
-
-				border: 1px solid #e0e0e0;
-				&:hover,
-      &:focus {
-        cursor: not-allowed;
-			`}
-
-			${(props) =>
-				props.helperText &&
-				css`
-			left: 317px;
-top: 621px;
-
-/* Gray 3 */
-
-border: 1px solid #828282;
-				&:hover,
-      &:focus {
-        
-			`}
+export const InputHover = styled(Inputs)`
+	:hover {
+		border: 1px solid red;
+	}
 `;
