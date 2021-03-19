@@ -55,14 +55,14 @@ export const NavLink = styled.a`
 		css`
 			top: 327px;
 			width: 53px;
-			font-weight: bold;
-			color: #090f31;
 		`}
   ${(props) =>
 		props.inputs &&
 		css`
 			top: 375px;
 			width: 45px;
+			font-weight: bold;
+			color: #090f31;
 		`}
   ${(props) =>
 		props.grid &&

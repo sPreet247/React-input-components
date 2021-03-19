@@ -19,69 +19,25 @@ export const Wrapper = styled.div`
 	flex-direction: column;
 `;
 
-export const HelperText = styled.text`
-
-font-family: Ubuntu Mono;
+export const HelperText = styled.h4`
+	font-family: Ubuntu Mono;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 12px;
 	color: #333333;
-	${(props) =>
-		props.error &&
-		css`
-			display: inline-block;
-			left: 317px;
-			top: 278px;
-		`}
-	${(props) =>
-		props.disabled &&
-		css`
-			left: 317px;
-			top: 425px;
-		`}
-		${(props) =>
-			props.helperText &&
-			css`
-				left: 317px;
-				top: 572px;
-			`}
 `;
 
 export const Label = styled.label`
-	
-
 	font-family: Noto Sans JP;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 17px;
 	color: #333333;
-	${(props) =>
-		props.error &&
-		css`
-			left: 318px;
-			top: 306px;
-			color: #d32f2f;
-		`}
-	${(props) =>
-		props.disabled &&
-		css`
-			left: 317px;
-			top: 453px;
-		`}
-
-		${(props) =>
-			props.helperText &&
-			css`
-				left: 317px;
-				top: 600px;
-			`}
 `;
 
-export const Inputs = styled.input.attrs((props) => ({
-	className: props.className,
-}))`
+export const Inputs = styled.input`
 	padding: 0.6rem;
 	width: 10rem;
 
@@ -90,4 +46,15 @@ export const Inputs = styled.input.attrs((props) => ({
 	border: 1px solid #828282;
 	box-sizing: border-box;
 	border-radius: 8px;
+
+	${(props) =>
+		props.normal &&
+		css`
+			&:hover {
+				border: 1px solid #333333;
+			}
+			&:focus {
+				border: 1px solid #2962ff;
+			}
+		`}
 `;
