@@ -14,9 +14,18 @@ export const Heading = styled.h1`
 	color: #4f4f4f;
 `;
 
+export const Container = styled.div`
+	max-width: 1200px;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto;
+`;
+
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
+	margin-left: 8rem;
+	margin-top: 7rem;
 `;
 
 export const HelperText = styled.h4`
