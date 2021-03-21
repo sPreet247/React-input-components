@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 
-	margin-left: 8rem;
+	margin-left: 5rem;
 	margin-top: 8rem;
 `;
 
@@ -55,6 +55,24 @@ export const Label = styled.label`
 	font-size: 12px;
 	line-height: 17px;
 	color: #333333;
+
+	${(props) =>
+		props.error &&
+		css`
+			color: #d32f2f;
+		`}
+  
+  ${(props) =>
+		props.hovered &&
+		css`
+			color: #333333;
+		`}
+  
+  ${(props) =>
+		props.focused &&
+		css`
+			color: #2962ff;
+		`}
 `;
 
 export const Inputs = styled.input`
@@ -63,20 +81,43 @@ export const Inputs = styled.input`
 
 	padding-left: 12px;
 
-	border: 1px solid #828282;
+	border: ${(props) => (props.error ? '1px solid #D32F2F' : '1px solid #828282')};
 	box-sizing: border-box;
 	border-radius: 8px;
 
-	${(props) =>
-		props.normal &&
+	:hover {
+    border: 1px solid #333333;
+  }
+  
+  :focus,
+  :focus-within,
+  :focus-visible {
+    border: 1px solid #2962FF;
+   
+  }
+
+  ${(props) =>
+		props.hovered &&
 		css`
-			&:hover {
-				border: 1px solid #333333;
-			}
-			&:focus {
-				border: 1px solid #2962ff;
+			border: 1px solid #333333;
+		`}
+  
+  ${(props) =>
+		props.focused &&
+		css`
+			border: 1px solid #2962ff;
+		`}
+
+  ${(props) =>
+		props.disabled &&
+		css`
+			cursor: not-allowed;
+			border: none;
+			:hover {
+				border: none;
 			}
 		`}
+  
 `;
 
 export const IconComponent = styled.div`
@@ -85,4 +126,9 @@ export const IconComponent = styled.div`
 
 export const SizeComponent = styled.div`
 	display: flex;
+`;
+
+export const PhoneIcon = styled.div`
+	position: absolute;
+	padding: 1.5rem;
 `;
