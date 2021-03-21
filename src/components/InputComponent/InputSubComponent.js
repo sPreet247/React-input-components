@@ -1,4 +1,4 @@
-import { HelperText, Inputs, Label } from './InputElements';
+import { HelperText, Inputs, Label, Item, ItemInner } from './InputElements';
 
 const InputSubComponent = ({
 	helperText,
@@ -8,9 +8,14 @@ const InputSubComponent = ({
 }) => {
 	return (
 		<>
-			<HelperText>&lt;Input {helperText} /&gt;</HelperText>
-			<Label>{label}</Label>
-			<Inputs placeholder={otherProps.placeholder} />
+			<Item>
+				<ItemInner>
+					<HelperText>&lt;Input {helperText} /&gt;</HelperText>
+				</ItemInner>
+				<Label>{label}</Label>
+
+				<Inputs placeholder={otherProps.placeholder} />
+			</Item>
 		</>
 	);
 };

@@ -24,8 +24,19 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
+
 	margin-left: 8rem;
-	margin-top: 7rem;
+	margin-top: 8rem;
+`;
+
+export const Item = styled.div`
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+`;
+
+export const ItemInner = styled.div`
+	margin-bottom: 1rem;
 `;
 
 export const HelperText = styled.h4`
