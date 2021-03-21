@@ -78,3 +78,11 @@ export const Inputs = styled.input`
 			}
 		`}
 `;
+
+export const IconComponent = styled.div`
+	display: flex;
+`;
+
+export const SizeComponent = styled.div`
+	display: flex;
+`;

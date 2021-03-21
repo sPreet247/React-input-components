@@ -1,4 +1,10 @@
-import { Heading, Wrapper, Container } from './InputElements';
+import {
+	Heading,
+	Wrapper,
+	Container,
+	IconComponent,
+	SizeComponent,
+} from './InputElements';
 import InputSubComponent from './InputSubComponent';
 
 function Input() {
@@ -30,36 +36,37 @@ function Input() {
 						helperText='helperText = "Some interesting text"'
 						placeholder="Placeholder"
 					/>
+					<IconComponent>
+						<InputSubComponent
+							label="Label"
+							helperText="startIcon"
+							placeholder="Placeholder"
+						/>
 
-					<InputSubComponent
-						label="Label"
-						helperText="startIcon"
-						placeholder="Placeholder"
-					/>
-
-					<InputSubComponent
-						label="Label"
-						helperText="endIcon"
-						placeholder="Placeholder"
-					/>
-
+						<InputSubComponent
+							label="Label"
+							helperText="endIcon"
+							placeholder="Placeholder"
+						/>
+					</IconComponent>
 					<InputSubComponent
 						label="Label"
 						helperText='value = "text"'
 						placeholder="Placeholder"
 					/>
+					<SizeComponent>
+						<InputSubComponent
+							label="Label"
+							helperText='size = "sm"'
+							placeholder="Placeholder"
+						/>
 
-					<InputSubComponent
-						label="Label"
-						helperText='size = "sm"'
-						placeholder="Placeholder"
-					/>
-
-					<InputSubComponent
-						label="Label"
-						helperText='size = "md"'
-						placeholder="Placeholder"
-					/>
+						<InputSubComponent
+							label="Label"
+							helperText='size = "md"'
+							placeholder="Placeholder"
+						/>
+					</SizeComponent>
 
 					<InputSubComponent
 						label="Label"
