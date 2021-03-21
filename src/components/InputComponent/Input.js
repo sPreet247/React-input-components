@@ -13,72 +13,31 @@ function Input() {
 			<Heading>Inputs</Heading>
 			<Container>
 				<Wrapper>
-					<InputSubComponent
-						label="Label"
-						helperText=""
-						placeholder="Placeholder"
-					/>
+					<InputSubComponent label="Label" helperText="" />
 
-					<InputSubComponent
-						label="Label"
-						helperText="error"
-						placeholder="Placeholder"
-					/>
+					<InputSubComponent label="Label" helperText="error" />
 
-					<InputSubComponent
-						label="Label"
-						helperText="disabled"
-						placeholder="Placeholder"
-					/>
+					<InputSubComponent label="Label" helperText="disabled" />
 
 					<InputSubComponent
 						label="Label"
 						helperText='helperText = "Some interesting text"'
-						placeholder="Placeholder"
 					/>
 					<IconComponent>
-						<InputSubComponent
-							label="Label"
-							helperText="startIcon"
-							placeholder="Placeholder"
-						/>
+						<InputSubComponent label="Label" helperText="startIcon" />
 
-						<InputSubComponent
-							label="Label"
-							helperText="endIcon"
-							placeholder="Placeholder"
-						/>
+						<InputSubComponent label="Label" helperText="endIcon" />
 					</IconComponent>
-					<InputSubComponent
-						label="Label"
-						helperText='value = "text"'
-						placeholder="Placeholder"
-					/>
+					<InputSubComponent label="Label" helperText='value = "text"' />
 					<SizeComponent>
-						<InputSubComponent
-							label="Label"
-							helperText='size = "sm"'
-							placeholder="Placeholder"
-						/>
+						<InputSubComponent label="Label" helperText='size = "sm"' />
 
-						<InputSubComponent
-							label="Label"
-							helperText='size = "md"'
-							placeholder="Placeholder"
-						/>
+						<InputSubComponent label="Label" helperText='size = "md"' />
 					</SizeComponent>
 
-					<InputSubComponent
-						label="Label"
-						helperText="fullWidth"
-						placeholder="Placeholder"
-					/>
+					<InputSubComponent label="Label" helperText="fullWidth" />
 
-					<InputSubComponent
-						label="Label"
-						helperText='multiline row = "4"'
-						placeholder="Placeholder"
-					/>
+					<InputSubComponent label="Label" helperText='multiline row = "4"' />
 				</Wrapper>
 			</Container>
 		</>
