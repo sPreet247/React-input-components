@@ -93,12 +93,7 @@ ${(props) =>
 			width: 100%;
 		`}
 
-		${(props) =>
-			props.size === 'ml' &&
-			css`
-				min-height: 150px;
-				max-height: 150px;
-			`}
+	
   
 	
 	padding-left: 12px;

@@ -22,7 +22,12 @@ const InputSubComponent = ({
 				</Label>
 
 				{type === 'textarea' ? (
-					<textarea rows="4" placeholder="Placeholder" />
+					<textarea
+						rows="4"
+						placeholder="Placeholder"
+						hover={hover}
+						focus={focus}
+					/>
 				) : (
 					<Inputs
 						placeholder="Placeholder"
