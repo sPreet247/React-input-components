@@ -51,7 +51,7 @@ function Input() {
 					<InputSubComponent
 						label="Label"
 						helperText='multiline row = "4"'
-						size="ml"
+						type="textarea"
 					/>
 				</Wrapper>
 			</Container>

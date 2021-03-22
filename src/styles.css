@@ -17,6 +17,15 @@ body {
 	font-family: 'Noto Sans JP', 'Ubuntu Mono', 'Poppins', Monospace, sans-serif;
 }
 
+textarea {
+	width: 200px;
+	height: 150px;
+
+	border: 1px solid #828282;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+
 footer {
 	text-align: center;
 	color: #9e9e9e;

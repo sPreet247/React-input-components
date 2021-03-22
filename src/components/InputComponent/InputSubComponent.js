@@ -3,13 +3,13 @@ import { HelperText, Inputs, Label, Item, ItemInner } from './InputElements';
 const InputSubComponent = ({
 	helperText,
 	label,
-	focused,
-	hovered,
+	focus,
+	hover,
 	error,
 	disabled,
 	size,
-	fullWidth,
-	multiline,
+
+	type,
 }) => {
 	return (
 		<>
@@ -17,20 +17,23 @@ const InputSubComponent = ({
 				<ItemInner>
 					<HelperText>&lt;Input {helperText} /&gt;</HelperText>
 				</ItemInner>
-				<Label hovered={hovered} focused={focused} error={error}>
+				<Label hover={hover} focus={focus} error={error}>
 					{label}
 				</Label>
 
-				<Inputs
-					placeholder="Placeholder"
-					error={error}
-					hovered={hovered}
-					focused={focused}
-					disabled={disabled}
-					size={size}
-					fullWidth={fullWidth}
-					multiline={multiline}
-				/>
+				{type === 'textarea' ? (
+					<textarea rows="4" placeholder="Placeholder" />
+				) : (
+					<Inputs
+						placeholder="Placeholder"
+						error={error}
+						hover={hover}
+						focus={focus}
+						disabled={disabled}
+						size={size}
+						type={type}
+					/>
+				)}
 			</Item>
 		</>
 	);

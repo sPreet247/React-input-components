@@ -64,13 +64,13 @@ export const Label = styled.label`
 		`}
   
   ${(props) =>
-		props.hovered &&
+		props.hover &&
 		css`
 			color: #333333;
 		`}
   
   ${(props) =>
-		props.focused &&
+		props.focus &&
 		css`
 			color: #2962ff;
 			/* border: ${(props) => (props.error ? '#D32F2F' : '#2962FF')}; */
@@ -120,13 +120,13 @@ ${(props) =>
   }
 
   ${(props) =>
-		props.hovered &&
+		props.hover &&
 		css`
 			border: 1px solid #333333;
 		`}
   
   ${(props) =>
-		props.focused &&
+		props.focus &&
 		css`
 			border: 1px solid #2962ff;
 		`}
@@ -165,5 +165,3 @@ export const PhoneIcon = styled.div`
 	position: absolute;
 	padding: 1.5rem;
 `;
-
-export const TextArea = styled.textarea``;
