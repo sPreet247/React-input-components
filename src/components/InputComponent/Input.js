@@ -24,6 +24,7 @@ function Input() {
 					<InputSubComponent
 						label="Label"
 						helperText='helperText = "Some interesting text"'
+						error
 					/>
 					<IconComponent>
 						<InputSubComponent label="Label" helperText="startIcon">
@@ -38,12 +39,16 @@ function Input() {
 					</IconComponent>
 					<InputSubComponent label="Label" helperText='value = "text"' />
 					<SizeComponent>
-						<InputSubComponent label="Label" helperText='size = "sm"' />
+						<InputSubComponent
+							label="Label"
+							helperText='size = "sm"'
+							size="sm"
+						/>
 
 						<InputSubComponent label="Label" helperText='size = "md"' />
 					</SizeComponent>
 
-					<InputSubComponent label="Label" helperText="fullWidth" />
+					<InputSubComponent label="Label" helperText="fullWidth" size="fl" />
 
 					<InputSubComponent label="Label" helperText='multiline row = "4"' />
 				</Wrapper>

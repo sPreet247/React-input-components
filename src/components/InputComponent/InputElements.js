@@ -56,10 +56,11 @@ export const Label = styled.label`
 	line-height: 17px;
 	color: #333333;
 
+
 	${(props) =>
 		props.error &&
 		css`
-			color: #d32f2f;
+			color: ${(props) => (props.error ? '#D32F2F' : '#828282')};
 		`}
   
   ${(props) =>
@@ -72,6 +73,7 @@ export const Label = styled.label`
 		props.focused &&
 		css`
 			color: #2962ff;
+			/* border: ${(props) => (props.error ? '#D32F2F' : '#2962FF')}; */
 		`}
 `;
 
@@ -79,6 +81,19 @@ export const Inputs = styled.input`
 	padding: 0.6rem;
 	width: 10rem;
 
+${(props) =>
+	props.size === 'sm' &&
+	css`
+		padding: 0.2rem;
+	`}
+
+	${(props) =>
+		props.size === 'fl' &&
+		css`
+			width: 100%;
+		`}
+
+	
 	padding-left: 12px;
 
 	border: ${(props) => (props.error ? '1px solid #D32F2F' : '1px solid #828282')};
@@ -87,13 +102,14 @@ export const Inputs = styled.input`
 
 	:hover {
     border: 1px solid #333333;
+	
   }
   
   :focus,
   :focus-within,
   :focus-visible {
-    border: 1px solid #2962FF;
-   
+    
+		border: ${(props) => (props.error ? '1px solid #D32F2F' : '1px solid #2962FF')};
   }
 
   ${(props) =>
@@ -107,6 +123,16 @@ export const Inputs = styled.input`
 		css`
 			border: 1px solid #2962ff;
 		`}
+
+
+		${(props) =>
+			props.error &&
+			css`
+				border: 1px solid #d32f2f;
+				&focus {
+					border: 1px solid #d32f2f;
+				}
+			`}  	
 
   ${(props) =>
 		props.disabled &&
