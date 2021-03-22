@@ -27,12 +27,10 @@ function Input() {
 						error
 					/>
 					<IconComponent>
-						<InputSubComponent label="Label" helperText="startIcon">
-							<PhoneIcon>
-								<MdPhone />
-							</PhoneIcon>
-						</InputSubComponent>
-
+						<InputSubComponent
+							label="Label"
+							helperText="startIcon"></InputSubComponent>
+						<MdPhone />
 						<InputSubComponent label="Label" helperText="endIcon" />
 
 						<MdLock />
@@ -50,9 +48,14 @@ function Input() {
 
 					<InputSubComponent label="Label" helperText="fullWidth" size="fl" />
 
-					<InputSubComponent label="Label" helperText='multiline row = "4"' />
+					<InputSubComponent
+						label="Label"
+						helperText='multiline row = "4"'
+						size="ml"
+					/>
 				</Wrapper>
 			</Container>
+			<footer>created by Sukhpreet Singh - devChallenges.io</footer>
 		</>
 	);
 }

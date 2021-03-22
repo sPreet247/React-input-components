@@ -93,6 +93,13 @@ ${(props) =>
 			width: 100%;
 		`}
 
+		${(props) =>
+			props.size === 'ml' &&
+			css`
+				min-height: 150px;
+				max-height: 150px;
+			`}
+  
 	
 	padding-left: 12px;
 
@@ -158,3 +165,5 @@ export const PhoneIcon = styled.div`
 	position: absolute;
 	padding: 1.5rem;
 `;
+
+export const TextArea = styled.textarea``;
