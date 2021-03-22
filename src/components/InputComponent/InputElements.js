@@ -136,16 +136,18 @@ ${(props) =>
 				}
 			`}  	
 
-  ${(props) =>
-		props.disabled &&
-		css`
-			cursor: not-allowed;
-			border: none;
-			:hover {
+ 
+	
+		${(props) =>
+			props.disabled &&
+			css`
+				cursor: not-allowed;
 				border: none;
-			}
-		`}
-  
+				:hover {
+					border: none;
+				}
+			`}
+
 `;
 
 export const IconComponent = styled.div`
@@ -154,9 +156,4 @@ export const IconComponent = styled.div`
 
 export const SizeComponent = styled.div`
 	display: flex;
-`;
-
-export const PhoneIcon = styled.div`
-	position: absolute;
-	padding: 1.5rem;
 `;

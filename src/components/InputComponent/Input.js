@@ -4,10 +4,8 @@ import {
 	Container,
 	IconComponent,
 	SizeComponent,
-	PhoneIcon,
 } from './InputElements';
 import InputSubComponent from './InputSubComponent';
-import { MdPhone, MdLock } from 'react-icons/md';
 
 function Input() {
 	return (
@@ -29,11 +27,10 @@ function Input() {
 					<IconComponent>
 						<InputSubComponent
 							label="Label"
-							helperText="startIcon"></InputSubComponent>
-						<MdPhone />
+							helperText="startIcon"
+							icon="startIcon"
+						/>
 						<InputSubComponent label="Label" helperText="endIcon" />
-
-						<MdLock />
 					</IconComponent>
 					<InputSubComponent label="Label" helperText='value = "text"' />
 					<SizeComponent>
