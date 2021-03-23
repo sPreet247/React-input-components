@@ -1,5 +1,4 @@
 import { HelperText, Inputs, Label, Item, ItemInner } from './InputElements';
-import { MdPhone, MdLock } from 'react-icons/md';
 
 const InputSubComponent = ({
 	helperText,
@@ -30,10 +29,6 @@ const InputSubComponent = ({
 						hover={hover}
 						focus={focus}
 					/>
-				) : icon === 'startIcon' ? (
-					<MdPhone />
-				) : icon === 'endIcon' ? (
-					<MdLock />
 				) : (
 					<Inputs
 						placeholder="Placeholder"

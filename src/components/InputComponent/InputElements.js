@@ -157,3 +157,5 @@ export const IconComponent = styled.div`
 export const SizeComponent = styled.div`
 	display: flex;
 `;
+
+export const Icons = styled.i``;

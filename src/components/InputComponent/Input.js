@@ -4,9 +4,10 @@ import {
 	Container,
 	IconComponent,
 	SizeComponent,
+	Icons,
 } from './InputElements';
 import InputSubComponent from './InputSubComponent';
-
+import { MdCall, MdLock } from 'react-icons/md';
 function Input() {
 	return (
 		<>
@@ -24,13 +25,24 @@ function Input() {
 						helperText='helperText = "Some interesting text"'
 						error
 					/>
+
 					<IconComponent>
+						<div>
+							<InputSubComponent
+								label="Label"
+								helperText="startIcon"
+								startIcon={
+									<Icons>
+										<MdCall />
+									</Icons>
+								}
+							/>
+						</div>
 						<InputSubComponent
 							label="Label"
-							helperText="startIcon"
-							icon="startIcon"
+							helperText="endIcon"
+							endIcon="endIcon"
 						/>
-						<InputSubComponent label="Label" helperText="endIcon" />
 					</IconComponent>
 					<InputSubComponent label="Label" helperText='value = "text"' />
 					<SizeComponent>
