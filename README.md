@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/sPreet247/React-input-components">
       Solution
     </a>
     <span> | </span>
